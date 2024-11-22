@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <link rel="icon" href="/facebook work/icon/favicon.png" type="image/png">
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* From color.txt */
+            position: relative;
+        }
+
+        /* Container for the entire content */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #3b5998; /* Facebook blue from color.txt */
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Position the "people" image */
+        .header img {
+            position: absolute;
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            max-width: 400px; /* Adjust the size as needed */
+        }
+
+        /* Form container styles */
+        .form-container {
+            background-color: #ffffff; /* From color.txt */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #3b5998; /* Facebook blue */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .form-container p {
+            text-align: center;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        /* Input field styles */
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #dfe3ee; /* Light border color from color.txt */
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Gender selection styles */
+        .form-container label {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-container input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Button styles */
+        .form-container button {
+            width: 100%;
+            background-color: #42b72a;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-container button:hover {
+            background-color: #36a420;
+        }
+
+        /* Footer note styles */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Facebook</h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+            <img src="facebook work/images/people.png" alt="People connecting around the world">
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <h2>Create an account</h2>
+            <p>It's free and always will be.</p>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email (e.g., example@example.com)" required>
+                <input type="password" placeholder="Password" required>
+
+                <label for="birthday">Birthday:</label>
+                <div>
+                    <select id="day" name="day" required>
+                        <option value="" disabled selected>Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <!-- Add more days -->
+                    </select>
+                    <select id="month" name="month" required>
+                        <option value="" disabled selected>Month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <!-- Add more months -->
+                    </select>
+                    <select id="year" name="year" required>
+                        <option value="" disabled selected>Year</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <!-- Add more years -->
+                    </select>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="radio" name="gender" value="Female" required> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Male" required> Male
+                    </label>
+                </div>
+
+                <button type="submit">Create an account</button>
+            </form>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>By clicking Create an account, you agree to our Terms and that you have read our Data Policy, including our Cookie Use.</p>
+        </div>
+    </div>
+</body>
+</html>
